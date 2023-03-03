@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <style>
+            .jwb-button, .jwb-button:hover{
+                /* style="" Shortcuts: */
+                --c: #FAFAFE; /* --c: Border Color // Default */
+                --b: rgba(5,5,10,0.9); /* --b: Background Color // Default */
+                --t: #FAFAFE; /* --t: Text Color // Default */
+                --ht: var(--b); /* --ht: Highlighted Text Color // Inherit Background*/
+                --hb: var(--c); /* --hb: Highlighted Background Color // Inherit Border */
+                --hc: var(--c); /* --hc: Highlighted Border Color // Inherit Border */
+                --m: auto; /* --m: Margin // Default */
+                --p: 2%; /* --p: Padding Left/Right // Default */
+                --s: 2%; /* --s: Margin Top/Bottom // Default */
+                --st: var(--s); /* --st: Margin Top // Inherit Margin Top/Bottom */
+                --sb: var(--s); /* --sb: Margin Bottom // Inherit Margin Top/Bottom */
+
+                width: fit-content;
+                margin: var(--m);
+                margin-top: var(--st);
+                margin-bottom: var(--sb);
+                padding-left: var(--p);
+                padding-right: var(--p);
+                text-align: center;
+
+                border-style: solid;
+                border-width: medium;
+                border-color: var(--c);
+                border-radius: 5px;
+                background-color: var(--b);
+                color: var(--t);
+                text-decoration: none;
+                font-family: 'Courier New', Courier, monospace;
+            }
+            .jwb-button:hover{
+                border-color: var(--hc);
+                background-color: var(--hb);
+                color: var(--ht);
+                text-decoration: underline;
+            }
+            .jwb-button a{
+                color: inherit;
+                text-decoration: inherit;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1 style="text-align: center;">Easy Custom Buttons! by JWBstuhr</h1>
+
+        <!-- `s`, `st`, and `sb` refer to margin spacing. Feel free to ignore in the example.-->
+        <div class="jwb-button" style="--sb: auto;">
+            <a href="">Button! (Default)</a>
+        </div>
+
+        <hr>
+
+        <!-- Red color: -->
+        <div class="jwb-button" style="--c: red; --st: auto;">
+            <a href="">Red Button! (Custom color)</a>
+        </div>
+        <!-- Orange color: -->
+        <div class="jwb-button" style="--c: orange;">
+            <a href="">Orange Button! (Custom color)</a>
+        </div>
+        <!-- Yellow color: -->
+        <div class="jwb-button" style="--c: yellow;">
+            <a href="">Yellow Button! (Custom color)</a>
+        </div>
+        <!-- Lime color: -->
+        <div class="jwb-button" style="--c: lime;">
+            <a href="">Lime Button! (Custom color)</a>
+        </div>
+        <!-- Green color: -->
+        <div class="jwb-button" style="--c: green;">
+            <a href="">Green Button! (Custom color)</a>
+        </div>
+        <!-- Cyan color: -->
+        <div class="jwb-button" style="--c: cyan;">
+            <a href="">Cyan Button! (Custom color)</a>
+        </div>
+        <!-- Blue color, :hover text remains the same: -->
+        <div class="jwb-button" style="--c: blue; --ht: var(--t);">
+            <a href="">Blue Button! (Custom highlight color)</a>
+        </div>
+        <!-- Indigo color, :hover text remains the same: -->
+        <div class="jwb-button" style="--c: indigo; --ht: var(--t);">
+            <a href="">Indigo Button! (Custom highlight color)</a>
+        </div>
+        <!-- Purple color, :hover text remains the same: -->
+        <div class="jwb-button" style="--c: purple; --ht: var(--t); --sb: auto;">
+            <a href="">Purple Button! (Custom highlight color)</a>
+        </div>
+
+        <hr>
+
+        <!-- Pink color, light pink background, black text, :hover text remains the same, padding 5%: -->
+        <div class="jwb-button" style="--c: #F589A2; --b: #FDBDCC; --t: #040404; --ht: var(--t); --p: 5%; --st: auto;">
+            <a href="">All customized Button! (+ Padding)</a>
+        </div>
+        <!-- Gray color, simple font family change for demonstration: -->
+        <div class="jwb-button" style="--c: gray; font-family: Arial, Helvetica, sans-serif;">
+            <a href="">Different font Button!</a>
+        </div>
+
+    </body>
+</html>
